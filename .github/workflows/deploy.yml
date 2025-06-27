@@ -26,5 +26,5 @@ jobs:
           SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
           SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
           DIST_FOLDER: site_dist
-          GITHUB_TOKEN: ${{ secrets.ActionsAndPRsReadWrite }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EPOCHS: ${{ inputs.EPOCHS }}
