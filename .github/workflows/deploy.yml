@@ -20,11 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: deploy site
-        uses: MystenLabs/walrus-sites/.github/actions/deploy@nt/chore-update-gh-actions-version-tags
+        uses: MystenLabs/walrus-sites/.github/actions/deploy@nt/sew-289-gh-action-support-wallet-exported-keys
         with:
           SUI_NETWORK: ${{ inputs.SUI_NETWORK }}
-          SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
-          SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
+          SUI_SECRET_PHRASE: ${{ secrets.SUI_PHRASE }}
           DIST: site_dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EPOCHS: ${{ inputs.EPOCHS }}
