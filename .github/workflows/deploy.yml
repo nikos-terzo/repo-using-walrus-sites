@@ -9,7 +9,7 @@ on:
       CHECK_EXTEND:
         description: 'Check existing resources for epoch extention'
         required: false
-        default: 'true'
+        default: 'false'
       SUI_NETWORK:
         description: 'Sui network to deploy to'
         required: false
@@ -28,7 +28,7 @@ jobs:
         with:
           SUI_NETWORK: ${{ inputs.SUI_NETWORK }}
           SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
-          SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
+          SUI_BECH32_PRIVATE_KEY: ${{ secrets.SUI_BECH32_PRIVATE_KEY }}
           CHECK_EXTEND: ${{ inputs.CHECK_EXTEND }}
           DIST: site_dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
