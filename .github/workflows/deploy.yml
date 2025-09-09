@@ -27,7 +27,6 @@ jobs:
         uses: MystenLabs/walrus-sites/.github/actions/deploy@nt/sew-289-gh-action-support-wallet-exported-keys
         with:
           SUI_NETWORK: ${{ inputs.SUI_NETWORK }}
-          SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
           SUI_BECH32_PRIVATE_KEY: ${{ secrets.SUI_BECH32_PRIVATE_KEY }}
           CHECK_EXTEND: ${{ inputs.CHECK_EXTEND }}
           DIST: site_dist
