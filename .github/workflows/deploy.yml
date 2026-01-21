@@ -27,3 +27,4 @@ jobs:
           DIST: site_dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EPOCHS: ${{ inputs.EPOCHS }}
+          SITE_BUILDER_VERSION: 'v1'
