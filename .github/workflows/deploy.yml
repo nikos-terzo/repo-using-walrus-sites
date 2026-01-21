@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: deploy site
-        uses: MystenLabs/walrus-sites/.github/actions/deploy@nt/sew-289-gh-action-support-wallet-exported-keys
+        uses: MystenLabs/walrus-sites-github-actions/deploy@v1
         with:
           SUI_NETWORK: ${{ inputs.SUI_NETWORK }}
           SUI_BECH32_PRIVATE_KEY: ${{ secrets.SUI_BECH32_PRIV_KEY }}
